@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+<div class="container2">
+    <div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Education.html">Education</a>
+        <a href="ContactDetails.html">Contact details</a>
+        <a href="Experience.html">Experience</a>
+    </nav>
+    </div>
+
+/* skills */
+
+<div class= "content-wrapper">
+        <div class = "skills-items-wrapper">
+    
+            <div class ="skills-item-wrapper" >
+                <div class= "skills-image-background" style="background-image:url(images/c++..jpg )">
+                
+    
+                    <div class ="image-text-wrapper">
+                        <div class= "logo-wrapper">
+                            <img src="images/c++Logo.png">
+                        </div>
+     
+                        <div class ="subtitle">
+                            I am a profficient coder in this programming language
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class ="skills-item-wrapper" >
+                <div class= "skills-image-background" style="background-image:url(images/c#.jpg )">
+                
+    
+                    <div class ="image-text-wrapper">
+                        <div class= "logo-wrapper">
+                            <img src="images/c#Logo (3).png">
+                        </div>
+     
+                        <div class ="subtitle">
+                            I am a profficient coder in this programming language
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class ="skills-item-wrapper" >
+                <div class= "skills-image-background" style="background-image:url(images/java.jpg )">
+                
+    
+                    <div class ="image-text-wrapper">
+                        <div class= "logo-wrapper">
+                            <img src="images/javaLogo (5).png">
+                        </div>
+     
+                        <div class ="subtitle">
+                            I am a profficient coder in this programming language
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class ="skills-item-wrapper" >
+                <div class= "skills-image-background" style="background-image:url(images/python.jpg )">
+                
+    
+                    <div class ="image-text-wrapper">
+                        <div class= "logo-wrapper">
+                            <img src="images/pythonLogo (2).png">
+                        </div>
+     
+                        <div class ="subtitle">
+                            I am a profficient coder in this programming language
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class ="skills-item-wrapper" >
+                <div class= "skills-image-background" style="background-image:url(images/scratch.jpg )">
+                
+    
+                    <div class ="image-text-wrapper">
+                        <div class= "logo-wrapper">
+                            <img src="images/scratchLogo (2).jpg">
+                        </div>
+     
+                        <div class ="subtitle">
+                            I am a profficient coder  n this programming language
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class ="skills-item-wrapper" >
+                <div class= "skills-image-background" style="background-image:url(images/sql.jpg)">
+                
+    
+                    <div class ="image-text-wrapper">
+                        <div class= "logo-wrapper">
+                            <img src="images/sqlLogo (4).png">
+                        </div>
+     
+                        <div class ="subtitle">
+                            I am a profficient coder in this programming language
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+    
+        </div>
+    
+</div>
+</body>
+
+<script>
+/* CRIPT TAG javaScript code 
+-the const means that im creating a variable called skillsItems*/
+
+    const skillItems = document.querySelectorAll('.skills-item-wrapper');
+    
+    skillItems.forEach(skillItem => {
+        skillItem.addEventListener('mouseover',() => {
+          skillItem.childNodes[1].classList.add('image-darken');
+        })
+
+        skillItem.addEventListener('mouseout',() => {
+        skillItem.childNodes[1].classList.remove('image-darken');
+    })
+})
+ 
+
+</script>
+
+
+</html>
