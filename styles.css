@@ -1,138 +1,73 @@
 html{
     height: 100%;
 }
+
 body{
     margin: 0px;
     background-image: url(images/annie-spratt-kDo57E2qOE4-unsplash\ \(1\).png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center;
-}
-.container{
-
     
+}
+.content-wrapper
+{
+    padding:100px;
+}
+
+.container{
+    min-height: 100vh;
+    position: absolute;
     margin-left: auto;
     margin-right: auto;
-    width:1024px ;
+    width: 100%;
 
 }
-header{
-    color: white;
-    font-size: 40px;
-    font-style: oblique;
-    text-align: center;
-    background-color: rgba(250, 128, 114, 0.219);
-    height:118px ;
+main{
 
+    color: white;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    height: 400px;
+    text-align: center;
+    padding-top: 80px;
+    padding-left:  240px;
+    padding-right: 240px;
+}
+
+
+main h1{
+    font-size: 40px;
+    height:118px ;
 }
 nav{
 
     background-color: rgba(250, 196, 114, 0.438);
     height:40px;
     text-align: center;
-
-
-    
-}
-main{
-
-
-    height: 400px;
-    text-align: center;
-    padding-top: 80px;
-    padding-left:  240px;
-    padding-right: 240px;
-
-
-    
-}
-footer{
-
-    background-color: rgba(168, 250, 114, 0.685);
-    height: 100px;
-
-}
-
-
-
-a{
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 
 }
+
+    
+
 nav a{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+
     text-decoration: none;
     padding-left: 20px;
     padding-right: 20px;
     
 }
-/* Skills style */
 
-
-
-/*
-.container2{
-    display: grid;
-    grid-template-columns: 1fr;
-
-}
-*/
-.skills-items-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-
-}.skills-item-wrapper{
-    position: relative;
-}
-.skills-image-background{
-    height:350px;
-    width:100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-.image-text-wrapper{
-    position: absolute;
-    top:0;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    padding-left: 100px;
-    padding-right: 100px;
-
-}
-.logo-wrapper{
-    width: 40%;
-    margin-bottom: 20px;
-}
-
-/* needs to be more specific wuth selecr*/
-.image-text-wrapper .subtitle{
-    transition: 1s;
-     font-weight: 600;
-    color: transparent;
-
-
-}
-.image-text-wrapper:hover .subtitle{
-    
-    font-weight: 600;
-    color:rgb(202, 43, 131);
-
-}
-/*SPECIAL function to be called in javascript*/
- 
-.image-darken{
-    transition: 1s;
-    filter:brightness(10%)
-
-}
 
 /*about page*/
+
 .two-column-wrapper{
+    background-color: rgba(66, 9, 28, 0.699);
     display:grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -148,6 +83,220 @@ nav a{
     color:pink;
 
 }
+.about-content-wrapper p{
+    color: white;
+    font-style: oblique;
+}
 
 
+  /*skills bar*/
+  .skills-background{
+    margin: 0px;
+    background-image: url(images/annie-spratt-kDo57E2qOE4-unsplash\ \(1\).png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+.container3 {
+  background-color: rgba(129, 14, 33, 0.486);
+ box-sizing: border-box;
+  width: 50%;
+  
  
+}
+
+/*.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+*/
+.cSharp {width: 90%; background-color: #c21826;}
+.cPlus{width: 70%; background-color: #f82ed6;}
+.java {width: 85%; background-color: pink;}
+.python {width: 65%; background-color: #c45581;}
+.sql{width: 75%; background-color: #c21826;}
+.scratch {width: 90%; background-color: #c21826;}
+
+/* skill Expand boxes*/
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .containerTab {
+    padding: 20px;
+    color: white;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Closable button inside the container tab */
+  .closebtn {
+    float: right;
+    font:oblique;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
+p{
+    font:oblique;
+    font-size:20px;
+    padding-left: 10px ;
+    
+}
+
+/*Education*/
+.container4{
+    position: relative;
+    width: 100%;
+    
+  }
+  
+  .image{
+    display: block;
+    width: 100%;
+    height: 50%;
+  }
+  
+  .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #6641178a;
+  }
+  
+  .container4:hover .overlay{
+    opacity: 1;
+  }
+  
+  .text4{
+
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    font-style: oblique;
+    text-align:center ;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: justify;
+    
+  }
+
+  /*contacts*/
+  contact
+  {
+  background: #111;
+  }
+  .formBx
+  {
+      min-width:60%;
+  }
+  .formBx form
+  {
+      display:flex;
+      flex-direction:column;
+  }
+  .formBx form h3,
+  .contactInfo h3
+  {
+      color:#fff;
+      font-size:20px;
+      font-weight:500;
+      margin-bottom:10px;
+  }
+  .formBx form input,
+  .formBx form textarea
+  {
+      margin-bottom:20px;
+      padding:15px;
+      font-size:16px;
+      border:none;
+      outline:none;
+      background:#222;
+      color:#fff;
+      resize:none;
+  }
+  .formBx
+  {
+      min-height: 200px;
+  }
+  .formBx form input:holder,
+  .formBx form textarea::holder
+  {
+      color:#999;
+  }
+  .formBx form input[type="Send"]
+  {
+      max-width:100px;
+      background:#2196f3;
+      cursor:pointer;
+      text-transform:uppercase;
+      letter-spacing:2px;
+  }
+  .content
+{
+    background-color: #111;
+}
+  .contactInfo
+  {
+      min-width:40%;
+  }
+  .contactInfoBx
+  {
+      position:relative;
+  }
+  .contactInfoBx .box
+  {
+      position:relative;
+      padding:20px 0;
+      display:flex;
+  }
+  .contactInfoBx .box .icon
+  {
+      min-width: 40px;
+      padding-top: 4px;
+      color:#fff;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-size:24px;
+  }
+  .contactInfoBx .box .text
+  {
+      display:flex;
+      margin-left:20px;
+      font-size:16px;
+      color:#fff;
+      flex-direction:column;
+      font-weight:300;
+  }
+  
+
+
+
+
+
+

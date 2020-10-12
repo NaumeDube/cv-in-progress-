@@ -7,40 +7,276 @@
     <meta name="Description" content="virtual representation of the curriculum vitae of Naume Dube ">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
     
 </head>
 
 
 <body>  
 
-<div class="container"></div>
+  
+
 
     <header>
-       <h1>Hey there!
-           Welcome to my website.
-       </h1> 
-    </header>
-
     <nav>
-        <a href="index.html">Home</a>
-        <a href="About.html">About</a>
-        <a href="Skills.html">Skills</a>
-        <a href="Education.html">Education</a>
-        <a href="ContactDetails.html">Contact details</a>
-        <a href="Experience.html">Experience</a>
+        <a href="#index.html">Home</a>
+        <a href="#About.html">About</a>
+        <a href="#Skills.html">Skills</a>
+        <a href="#Education.html">Education</a>
+        <a href="#ContactDetails.html">Contact details</a>
+        
     </nav>
+    </header> 
 
     <main>
 
-    
+      <h1> Hello,<br>I AM  NAUME DUBE</h1> 
+       <h4>Final year BSC IT student,looking for an opportunity to make a digital change.
 
     </main>
 
-    <footer></footer>
+  
 
 </div>
+  
+
+  <section>
+
+<div class="content-wrapper" id="About.html">
+    <div class ="two-column-wrapper">
+        <div class="about-image-wrapper"> 
+            <img src="images/20200906_083842copy.jpg">
+         
+        </div>
+
+        <div class= "about-content-wrapper">
+           <h1>
+            Hello,Thank you for visiting my website.
+           </h1> 
+           <p>
+          I am highly motivated, an enthusiastic-goal orientated cooperative individual that is seeking the opportunity to work in an environment that utilizes the skills and abilities that are demonstrated to be necessary for the duties performed at your work place.
+          I am a procient programmer who is passionate about designing and User interface Design.
+           </p>
+
+        </div>
+
+    </div>
+</div>  
+  </section>
+<!--skills-->
+
+<section>
+
+    <div class="skills-background" id="Skills.html">
+
+    <div style="color: white;">
+
+        <div style="text-align: center;">
+        <h1>Technical Skills</h1>
+        </div>
+        <p>C#</p>
+        <div class="container3">
+          <div class="cSharp">90%</div>
+        </div>
+        
+        <p>C++</p>
+        <div class="container3">
+          <div class="cPlus">70%</div>
+        </div>
+        
+        <p>JAVA</p>
+        <div class="container3">
+          <div class="java">85%</div>
+        </div>
+        
+        <p>PYTHON</p>
+        <div class="container3">
+          <div class="python">65%</div>
+        </div>
+        
+        <p>MY SQL</p>
+        <div class="container3">
+          <div class="sql">75%</div>
+        </div>
+        
+        <p>SCRATCH</p>
+        <div class="container3">
+          <div class="scratch">90%</div>
+        </div>
+        
+        <div style="text-align:center">
+            <h2>Soft Skills & Achievements</h2>
+        </div>
+          
+        
+          <div class="row">
+            <div class="column" onclick="openTab('b1');" style="background:rgba(44, 15, 27, 0.473);">
+             Soft Skills
+            </div>
+            <div class="column" onclick="openTab('b2');" style="background:rgba(49, 25, 35, 0.473);">
+              Achievements
+            </div>
+        
+          </div>
+          
+          <div id="b1" class="containerTab" style="display:none;background:rgba(126, 16, 62, 0.26)">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <h2>Soft Skills</h2>
+            <p>•	Team work<br>
+                •	Reliable<br>
+                •	Highly Self-motivated<br>
+                •	Strong decision maker<br>
+                •	Critical Thinking<br>	•	Adaptability<br>
+                •	Work Ethic<br>
+                •	Communication Skills<br>
+                •	Resilient<br>
+                </p>
+          </div>
+
+          <section>
+          <div id="b2" class="containerTab" style="display:none;background:rgba(156, 20, 61, 0.233)">
+            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+            <h2>Achievements</h2>
+            <p>•	Golden Key society member<br>
+               •	Cyril Ramaphosa Foundation Trustee<br>
+                
+          </div>
+    </div>
+ </div>
+
+          
+          
+          <script>
+          function openTab(tabName) {
+            var i, x;
+            x = document.getElementsByClassName("containerTab");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+          }
+          </script>
+</section>
+        
+<!--Education-->
+
+<section>
+
+<div class="main-content" id="Education.html">
+    <div class ="container4">
+            <img src="images/education.jpg" class= "image">
+            <div class= "overlay">
+
+          <div class= "text4">
+              <h4>
+                  
+                  
+Education Qualifications:
+</h4>
+<p>
+School Attended:
+Sedaven High School
+</p>
+<p>
+Grade Passed: 
+Grade 12    
+</p>
+<p>Subjects: 
+English, Zulu, Mathematics, Physical Science, Life Science, Business Studies & Life Orientation</p>
+<p>
+Year:2016
+</p>
+<p>
+Tertiary Institute: 
+North West University
+<p>Bachelor of Science – BS ,Information Technology</p>
+</p>
+<p>
+Year :
+2017- 2020
+</p>
+       
+
+</div>
+            
+</div>
+</div>
+</div>
+
+</section>
+<section class="contact" id="ContactDetails.html">
+  <div class="heading" style="color:white">
+      <h2>Contact Info</h2>
+      <p>Here are my caontact details:</p>
+  </div>
+  <div class="content">
+      <div class="contactInfo">
+          <h3>ContactInfo</h3>
+          <div class="contactInfoBx">
+              <div class="box">
+                  <div class="icon">
+                      <i class="fa fa-map-marker"></i>
+                      <div class="text">
+                          <h3>Address</h3>
+                          <p>5 Letaba Street, <br>Shalimar Ridge,Heidelberg<br> 1441</p><br>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="box">
+                  <div class="icon">
+                      <i class="fa fa-phone"></i>
+                      <div class="text">
+                          <h3>Phone</h3>
+                          <p>082 045 5487</p><br>
+                      </div>
+                  </div>
+              </div>
+              <div class="box">
+                  <div class="icon">
+                      <i class="fa fa-envelope-o"></i>
+                      <div class="text">
+                          <h3>Email</h3>
+                          <p>naominaydube@gmail.com<br></p><br>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="box">
+                  <div class="icon">
+                      <i class="fa fa-map-marker"></i>
+                      <div class="text">
+                          <h3>Location</h3>
+                          <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3563.8118425472735!2d27.861540615040777!3d-26.71845738321163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e945908d48164cb%3A0x8463ec0c5df0f3bd!2sMoahi%20Village!5e0!3m2!1sen!2sza!4v1601318070463!5m2!1sen!2sza" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  </div>
+      <div class="formBx">
+          <form>
+              <h3> Message Me</h3>
+              <input type="text" name="" holder="Name">
+              <input type="email" name="" holder="Email">
+              <textarea holder="Your Message"></textarea>
+              <input type="Send" value="Send">
+          </form>
+      </div>
+  </div>
+
+ 
+</section>
+
+
+ <script type="text/javascript">
+    window.addEventListener('scroll') ,function()
+    {
+        var scroller= document.querySelector('scroller');
+        scroller.classList.toggle('sticky'),window.screenY > 0;
+            }
+</script>
 
     
 </body>
+
 </html>
